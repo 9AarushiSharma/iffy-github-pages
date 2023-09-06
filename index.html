@@ -8,19 +8,18 @@
         <link rel="icon" href="https://fav.farm/👓" />
     </head>
     <body>
-        <script>
-
-            console.log('window.location.host', 
-            window.location.host)
-            if (window.location.host.includes('github.io')) {
-                document.write('<img src="https://picsum.photos/id/343/200/300">');
-            } else {
-                 document.write('<img src="https://picsum.photos/id/343/200/300" alt="image displayed because not GitHub Pages">');
-            }
-        </script>
         <main>
             <h1>Iffy</h1>
-            <img src="https://picsum.photos/id/343/200/300" alt="image displayed because not github pages">
+            <script>
+                console.log('window.location.host', 
+                window.location.host)
+                if (window.location.host.includes('github.io')) {
+                    document.write('<img src="https://picsum.photos/id/200/200/300"> alt="image displayed because ON github pages">');
+                } else {
+                     document.write('<img src="https://picsum.photos/id/343/200/300" alt="image displayed because not GitHub Pages">');
+                }
+            </script>
+            <img src="https://picsum.photos/id/343/200/300"> alt="image displayed because not github pages"> 
         </main>
     </body>
 </html>
